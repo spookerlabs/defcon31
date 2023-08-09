@@ -1,0 +1,497 @@
+{
+    "Events": [
+        {
+            "EventId": "f94b5519-00b3-4260-a039-1bb03740c123",
+            "EventName": "AttachUserPolicy",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540744.0,
+            "EventSource": "iam.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [
+                {
+                    "ResourceType": "AWS::IAM::User",
+                    "ResourceName": "theiamguy"
+                },
+                {
+                    "ResourceType": "AWS::IAM::Policy",
+                    "ResourceName": "arn:aws:iam::aws:policy/AdministratorAccess"
+                }
+            ],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:25:44Z\",\"eventSource\":\"iam.amazonaws.com\",\"eventName\":\"AttachUserPolicy\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"requestParameters\":{\"userName\":\"theiamguy\",\"policyArn\":\"arn:aws:iam::aws:policy/AdministratorAccess\"},\"responseElements\":null,\"requestID\":\"c127bffc-ef8d-41fb-8fb6-1d8277b268a8\",\"eventID\":\"f94b5519-00b3-4260-a039-1bb03740c123\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"iam.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "c501075b-a509-4fa6-8fce-fa7106d35bf4",
+            "EventName": "AttachRolePolicy",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540743.0,
+            "EventSource": "iam.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:25:43Z\",\"eventSource\":\"iam.amazonaws.com\",\"eventName\":\"AttachRolePolicy\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: iam:AttachRolePolicy on resource: role AdministratorAccess because no identity-based policy allows the iam:AttachRolePolicy action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"39dc98a0-0564-43ae-b596-5226a2c8d7a4\",\"eventID\":\"c501075b-a509-4fa6-8fce-fa7106d35bf4\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"iam.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "7efcbb7b-0144-4454-a8e5-6d7baaba98fc",
+            "EventName": "AttachGroupPolicy",
+            "ReadOnly": "false",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540730.0,
+            "EventSource": "iam.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:25:30Z\",\"eventSource\":\"iam.amazonaws.com\",\"eventName\":\"AttachGroupPolicy\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: iam:AttachGroupPolicy on resource: group Admin because no identity-based policy allows the iam:AttachGroupPolicy action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"80c7de13-9c5a-4e3c-8d3e-52b6bcc7ed0c\",\"eventID\":\"7efcbb7b-0144-4454-a8e5-6d7baaba98fc\",\"readOnly\":false,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"iam.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "2d8ea328-bcc2-4f8d-bf21-e6485b086fa0",
+            "EventName": "ListGroups",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540711.0,
+            "EventSource": "iam.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:25:11Z\",\"eventSource\":\"iam.amazonaws.com\",\"eventName\":\"ListGroups\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: iam:ListGroups on resource: arn:aws:iam::212113601223:group/ because no identity-based policy allows the iam:ListGroups action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"0eff877b-c603-49bc-b201-8536b4c8c0fb\",\"eventID\":\"2d8ea328-bcc2-4f8d-bf21-e6485b086fa0\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"iam.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "5a003ef8-ef3f-4a51-b95a-cbca1063dfd5",
+            "EventName": "ListAttachedUserPolicies",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540686.0,
+            "EventSource": "iam.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:24:46Z\",\"eventSource\":\"iam.amazonaws.com\",\"eventName\":\"ListAttachedUserPolicies\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: iam:ListAttachedUserPolicies on resource: user theiamguy because no identity-based policy allows the iam:ListAttachedUserPolicies action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"e0ddafd5-9142-485e-8634-93f80234da7e\",\"eventID\":\"5a003ef8-ef3f-4a51-b95a-cbca1063dfd5\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"iam.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "e1f66b9f-c21d-4034-8647-017ea945bfd0",
+            "EventName": "ListUserPolicies",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540685.0,
+            "EventSource": "iam.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:24:45Z\",\"eventSource\":\"iam.amazonaws.com\",\"eventName\":\"ListUserPolicies\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: iam:ListUserPolicies on resource: user theiamguy because no identity-based policy allows the iam:ListUserPolicies action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"f6c998fa-e2e0-4cb9-9ffb-36db2d59c803\",\"eventID\":\"e1f66b9f-c21d-4034-8647-017ea945bfd0\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"iam.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "e32de743-9bda-4c4e-b888-ed487b814be2",
+            "EventName": "ListGroupsForUser",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540680.0,
+            "EventSource": "iam.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:24:40Z\",\"eventSource\":\"iam.amazonaws.com\",\"eventName\":\"ListGroupsForUser\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: iam:ListGroupsForUser on resource: user theiamguy because no identity-based policy allows the iam:ListGroupsForUser action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"5ee92e87-ff83-4d3e-b76d-a61678a83b28\",\"eventID\":\"e32de743-9bda-4c4e-b888-ed487b814be2\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"iam.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "4acf6615-3cda-4124-b151-fd133d39b5e3",
+            "EventName": "GetCallerIdentity",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540676.0,
+            "EventSource": "sts.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:24:36Z\",\"eventSource\":\"sts.amazonaws.com\",\"eventName\":\"GetCallerIdentity\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"f08988b6-1ad3-4fa1-97f6-59ede81d503d\",\"eventID\":\"4acf6615-3cda-4124-b151-fd133d39b5e3\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"sts.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "01b492f0-8ae6-4455-8ce6-d41ae6431d54",
+            "EventName": "DescribeSubnets",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540540.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:22:20Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeSubnets\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"subnetSet\":{},\"filterSet\":{}},\"responseElements\":null,\"requestID\":\"95a921b2-e24b-45bd-84ed-dec97b016e16\",\"eventID\":\"01b492f0-8ae6-4455-8ce6-d41ae6431d54\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "65b41cf9-dfe8-4614-a213-08cc1f4c17d9",
+            "EventName": "DescribeLaunchTemplates",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540540.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:22:20Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeLaunchTemplates\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"DescribeLaunchTemplatesRequest\":\"\"},\"responseElements\":null,\"requestID\":\"c3d2dcf8-881c-4e86-b2bb-3746467d3517\",\"eventID\":\"65b41cf9-dfe8-4614-a213-08cc1f4c17d9\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "9cdd6e55-3fff-4114-a819-6bf5bc8c3720",
+            "EventName": "DescribeVpcs",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540540.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:22:20Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeVpcs\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"vpcSet\":{},\"filterSet\":{}},\"responseElements\":null,\"requestID\":\"c11a5806-7c43-420e-8cad-814b6ada46c6\",\"eventID\":\"9cdd6e55-3fff-4114-a819-6bf5bc8c3720\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "bda6c896-9a3c-414d-90b3-403a476b99a6",
+            "EventName": "DescribeVpcEndpoints",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540540.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:22:20Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeVpcEndpoints\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"DescribeVpcEndpointsRequest\":{\"MaxResults\":1000}},\"responseElements\":null,\"requestID\":\"bf894a31-c5e4-44de-8526-cc2a53e7a25b\",\"eventID\":\"bda6c896-9a3c-414d-90b3-403a476b99a6\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "5e43782b-a8e6-4938-8d02-790eb7a6df5d",
+            "EventName": "DescribeNetworkInterfaces",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540539.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:22:19Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeNetworkInterfaces\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"networkInterfaceIdSet\":{},\"filterSet\":{}},\"responseElements\":null,\"requestID\":\"6b24c7a6-dc4c-46ef-85c2-2467b8d4e5c0\",\"eventID\":\"5e43782b-a8e6-4938-8d02-790eb7a6df5d\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "d67d9d36-222c-47ab-96d2-5f5cdafd0b71",
+            "EventName": "DescribeRouteTables",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540539.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:22:19Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeRouteTables\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"routeTableIdSet\":{},\"filterSet\":{}},\"responseElements\":null,\"requestID\":\"558c427c-3477-4199-b63c-9e49b8c03fb2\",\"eventID\":\"d67d9d36-222c-47ab-96d2-5f5cdafd0b71\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "a97a5ffa-9982-4452-b512-21384da47929",
+            "EventName": "DescribeNetworkAcls",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540538.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:22:18Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeNetworkAcls\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"networkAclIdSet\":{},\"filterSet\":{}},\"responseElements\":null,\"requestID\":\"5625a2f1-a74a-42de-a738-4c0486027679\",\"eventID\":\"a97a5ffa-9982-4452-b512-21384da47929\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "ac3dcae6-2c7e-484c-ad25-9506846f8059",
+            "EventName": "DescribeCustomerGateways",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540538.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:22:18Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeCustomerGateways\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"customerGatewaySet\":{},\"filterSet\":{}},\"responseElements\":null,\"requestID\":\"8a496eda-1e39-40a5-a24a-335441a8838b\",\"eventID\":\"ac3dcae6-2c7e-484c-ad25-9506846f8059\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "b324577f-5264-4039-a625-fd66551eb4bd",
+            "EventName": "DescribeHosts",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540538.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:22:18Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeHosts\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"DescribeHostsRequest\":{\"MaxResults\":500}},\"responseElements\":null,\"requestID\":\"fa708f70-a9f9-42c6-a1be-e18459516b75\",\"eventID\":\"b324577f-5264-4039-a625-fd66551eb4bd\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "cdd02971-54c8-4ddb-9fad-e6dfc9f4dc6e",
+            "EventName": "DescribeNatGateways",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540538.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:22:18Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeNatGateways\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"DescribeNatGatewaysRequest\":{\"MaxResults\":1000}},\"responseElements\":null,\"requestID\":\"52ac4b46-5d90-4848-ace9-098258cc6dd4\",\"eventID\":\"cdd02971-54c8-4ddb-9fad-e6dfc9f4dc6e\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "74ad1e34-69d2-4d60-9ac7-8782ed3378be",
+            "EventName": "DescribeAddresses",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540537.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:22:17Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeAddresses\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"publicIpsSet\":{},\"filterSet\":{},\"allocationIdsSet\":{}},\"responseElements\":null,\"requestID\":\"8c8fe5c5-2bf9-46a1-8b90-d781e2087bc5\",\"eventID\":\"74ad1e34-69d2-4d60-9ac7-8782ed3378be\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "c9b9fd3b-034e-40e5-aa54-82db285fce0d",
+            "EventName": "DescribeInstances",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540537.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:22:17Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeInstances\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"maxResults\":1000,\"instancesSet\":{},\"filterSet\":{}},\"responseElements\":null,\"requestID\":\"6cfcefa0-d427-47c5-987c-4eccd26786c4\",\"eventID\":\"c9b9fd3b-034e-40e5-aa54-82db285fce0d\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "22d127dd-1538-4d07-ae81-8da8e9fb2602",
+            "EventName": "DescribeSecurityGroups",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540532.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:22:12Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeSecurityGroups\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"maxResults\":1000,\"securityGroupSet\":{},\"securityGroupIdSet\":{},\"filterSet\":{}},\"responseElements\":null,\"requestID\":\"c96b257f-bb48-42d6-9a09-fc9eb182f6b6\",\"eventID\":\"22d127dd-1538-4d07-ae81-8da8e9fb2602\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "80404f17-a5f5-49c9-a53f-9d1f531f67a2",
+            "EventName": "DescribeInstances",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540519.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:21:59Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeInstances\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"maxResults\":1000,\"instancesSet\":{},\"filterSet\":{}},\"responseElements\":null,\"requestID\":\"95c68576-2c77-4e3e-b76b-0aa58d780110\",\"eventID\":\"80404f17-a5f5-49c9-a53f-9d1f531f67a2\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "4c2ea3c8-36e9-4ad8-942d-c6e26d35f176",
+            "EventName": "DescribeResourcePolicy",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540479.0,
+            "EventSource": "organizations.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:21:19Z\",\"eventSource\":\"organizations.amazonaws.com\",\"eventName\":\"DescribeResourcePolicy\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: organizations:DescribeResourcePolicy on resource: arn:aws:organizations::UNKNOWN:resourcepolicy/UNKNOWN/rp-* because no identity-based policy allows the organizations:DescribeResourcePolicy action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"d5a4de5c-ffa9-4da3-b34f-42a7c9074880\",\"eventID\":\"4c2ea3c8-36e9-4ad8-942d-c6e26d35f176\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"organizations.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "3d0aea37-1276-4b6e-958d-9221384ba586",
+            "EventName": "ListRoots",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540475.0,
+            "EventSource": "organizations.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:21:15Z\",\"eventSource\":\"organizations.amazonaws.com\",\"eventName\":\"ListRoots\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: organizations:ListRoots on resource: * because no identity-based policy allows the organizations:ListRoots action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"b94c3a2a-226a-40a1-8b7f-173d08834abe\",\"eventID\":\"3d0aea37-1276-4b6e-958d-9221384ba586\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"organizations.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "40ef0e93-a8bf-4512-9b21-debfe7f0dcb6",
+            "EventName": "ListAccounts",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540469.0,
+            "EventSource": "organizations.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:21:09Z\",\"eventSource\":\"organizations.amazonaws.com\",\"eventName\":\"ListAccounts\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: organizations:ListAccounts on resource: * because no identity-based policy allows the organizations:ListAccounts action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"9041a2ff-e363-4119-ba9c-eb8483ca8624\",\"eventID\":\"40ef0e93-a8bf-4512-9b21-debfe7f0dcb6\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"organizations.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "d6106f06-8071-48f6-b9af-c282a5311a75",
+            "EventName": "ListDelegatedAdministrators",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540466.0,
+            "EventSource": "organizations.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:21:06Z\",\"eventSource\":\"organizations.amazonaws.com\",\"eventName\":\"ListDelegatedAdministrators\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: organizations:ListDelegatedAdministrators on resource: * because no identity-based policy allows the organizations:ListDelegatedAdministrators action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"f068fd6f-986d-4faf-acf3-54252dd007f0\",\"eventID\":\"d6106f06-8071-48f6-b9af-c282a5311a75\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"organizations.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "bb1ee5f7-ea59-411f-a7aa-782aa318bb06",
+            "EventName": "ListAWSServiceAccessForOrganization",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540465.0,
+            "EventSource": "organizations.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:21:05Z\",\"eventSource\":\"organizations.amazonaws.com\",\"eventName\":\"ListAWSServiceAccessForOrganization\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: organizations:ListAWSServiceAccessForOrganization on resource: * because no identity-based policy allows the organizations:ListAWSServiceAccessForOrganization action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"2ada9df4-4f72-45fb-b715-55c1932f2e51\",\"eventID\":\"bb1ee5f7-ea59-411f-a7aa-782aa318bb06\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"organizations.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "9d38220e-1a80-430f-b33e-c3ede3a6fc70",
+            "EventName": "ListRoots",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540434.0,
+            "EventSource": "organizations.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:20:34Z\",\"eventSource\":\"organizations.amazonaws.com\",\"eventName\":\"ListRoots\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: organizations:ListRoots on resource: * because no identity-based policy allows the organizations:ListRoots action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"d2910326-c87b-4d49-b311-bcff4141c5bb\",\"eventID\":\"9d38220e-1a80-430f-b33e-c3ede3a6fc70\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"organizations.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "795fab4a-af2f-4341-b6dc-d3b3399fbbb8",
+            "EventName": "ListAccounts",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540423.0,
+            "EventSource": "organizations.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:20:23Z\",\"eventSource\":\"organizations.amazonaws.com\",\"eventName\":\"ListAccounts\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: organizations:ListAccounts on resource: * because no identity-based policy allows the organizations:ListAccounts action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"bf7398e2-2954-4827-9c7e-7bc76a8c43a1\",\"eventID\":\"795fab4a-af2f-4341-b6dc-d3b3399fbbb8\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"organizations.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "6be9ffac-a65a-42ff-9870-d75befce017c",
+            "EventName": "ListPolicies",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540401.0,
+            "EventSource": "organizations.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:20:01Z\",\"eventSource\":\"organizations.amazonaws.com\",\"eventName\":\"ListPolicies\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: organizations:ListPolicies on resource: * because no identity-based policy allows the organizations:ListPolicies action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"260064e9-02c3-4b08-8796-96244f4cf8b3\",\"eventID\":\"6be9ffac-a65a-42ff-9870-d75befce017c\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"organizations.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "4d32718b-829a-4180-a6a2-4c250a24a18e",
+            "EventName": "ListPolicies",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540386.0,
+            "EventSource": "organizations.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:19:46Z\",\"eventSource\":\"organizations.amazonaws.com\",\"eventName\":\"ListPolicies\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: organizations:ListPolicies on resource: * because no identity-based policy allows the organizations:ListPolicies action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"2626c8e1-46f0-46e2-ad60-d4948afe9b5c\",\"eventID\":\"4d32718b-829a-4180-a6a2-4c250a24a18e\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"organizations.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "f0e55c11-50e7-476d-9931-0270746dd459",
+            "EventName": "ListPolicies",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540384.0,
+            "EventSource": "organizations.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:19:44Z\",\"eventSource\":\"organizations.amazonaws.com\",\"eventName\":\"ListPolicies\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: organizations:ListPolicies on resource: * because no identity-based policy allows the organizations:ListPolicies action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"ea322489-8abf-4d4a-99d4-85d3c04ad83e\",\"eventID\":\"f0e55c11-50e7-476d-9931-0270746dd459\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"organizations.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "197d95c7-f889-4a34-addc-03cadf4f32a0",
+            "EventName": "ListPolicies",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540383.0,
+            "EventSource": "organizations.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:19:43Z\",\"eventSource\":\"organizations.amazonaws.com\",\"eventName\":\"ListPolicies\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: organizations:ListPolicies on resource: * because no identity-based policy allows the organizations:ListPolicies action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"32379a5d-ea2b-4790-9e67-f7fb3d7dc3e0\",\"eventID\":\"197d95c7-f889-4a34-addc-03cadf4f32a0\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"organizations.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "7f820f5d-cc47-4508-af4a-1e00c06129b9",
+            "EventName": "ListRoots",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540381.0,
+            "EventSource": "organizations.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:19:41Z\",\"eventSource\":\"organizations.amazonaws.com\",\"eventName\":\"ListRoots\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: organizations:ListRoots on resource: * because no identity-based policy allows the organizations:ListRoots action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"227fd040-1a62-45be-a89a-08e74e0af29b\",\"eventID\":\"7f820f5d-cc47-4508-af4a-1e00c06129b9\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"organizations.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "1645a92d-adca-4c28-a005-cdb239099b77",
+            "EventName": "DescribeOrganization",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540380.0,
+            "EventSource": "organizations.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:19:40Z\",\"eventSource\":\"organizations.amazonaws.com\",\"eventName\":\"DescribeOrganization\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: organizations:DescribeOrganization on resource: * because no identity-based policy allows the organizations:DescribeOrganization action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"3b605652-9133-4cf2-a3e4-25e5a31b7537\",\"eventID\":\"1645a92d-adca-4c28-a005-cdb239099b77\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.3\",\"cipherSuite\":\"TLS_AES_128_GCM_SHA256\",\"clientProvidedHostHeader\":\"organizations.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "d1d11172-69db-43b1-a13b-881b12247a0e",
+            "EventName": "ListFunctions20150331",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540358.0,
+            "EventSource": "lambda.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:19:18Z\",\"eventSource\":\"lambda.amazonaws.com\",\"eventName\":\"ListFunctions20150331\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: lambda:ListFunctions on resource: * because no identity-based policy allows the lambda:ListFunctions action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"aa0968bc-7881-4d80-b6c2-59ad9b69d2e8\",\"eventID\":\"d1d11172-69db-43b1-a13b-881b12247a0e\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"lambda.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "2cef31ff-d4e5-4de4-972c-245b761b4eb9",
+            "EventName": "GetAccountSettings20160819",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540357.0,
+            "EventSource": "lambda.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:19:17Z\",\"eventSource\":\"lambda.amazonaws.com\",\"eventName\":\"GetAccountSettings20160819\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: lambda:GetAccountSettings on resource: * because no identity-based policy allows the lambda:GetAccountSettings action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"ddeaaf51-cef8-4e35-84d5-224af4ddd71d\",\"eventID\":\"2cef31ff-d4e5-4de4-972c-245b761b4eb9\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"lambda.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "3198b205-1c5a-40f8-baa6-43e19f98400b",
+            "EventName": "ListAttachedUserPolicies",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540328.0,
+            "EventSource": "iam.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:18:48Z\",\"eventSource\":\"iam.amazonaws.com\",\"eventName\":\"ListAttachedUserPolicies\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: iam:ListAttachedUserPolicies on resource: user theiamguy because no identity-based policy allows the iam:ListAttachedUserPolicies action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"e6b599e7-aef8-4e61-9a8f-9cfef6fe88f1\",\"eventID\":\"3198b205-1c5a-40f8-baa6-43e19f98400b\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"iam.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "9f614a2a-589e-42d2-816a-3188de6682d7",
+            "EventName": "ListUserPolicies",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540328.0,
+            "EventSource": "iam.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:18:48Z\",\"eventSource\":\"iam.amazonaws.com\",\"eventName\":\"ListUserPolicies\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: iam:ListUserPolicies on resource: user theiamguy because no identity-based policy allows the iam:ListUserPolicies action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"99d83792-67c6-422b-a3ec-6cd06aa1b692\",\"eventID\":\"9f614a2a-589e-42d2-816a-3188de6682d7\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"iam.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "f936c103-9b21-449d-96e6-a2c3f5a3f4c6",
+            "EventName": "ListGroupsForUser",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540328.0,
+            "EventSource": "iam.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:18:48Z\",\"eventSource\":\"iam.amazonaws.com\",\"eventName\":\"ListGroupsForUser\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"User: arn:aws:iam::212113601223:user/theiamguy is not authorized to perform: iam:ListGroupsForUser on resource: user theiamguy because no identity-based policy allows the iam:ListGroupsForUser action\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"d6acc691-336a-4a7c-aedc-dc958c1d8266\",\"eventID\":\"f936c103-9b21-449d-96e6-a2c3f5a3f4c6\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"iam.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "bf9981f8-0622-40e4-afc2-21aba3b4d70a",
+            "EventName": "GetCallerIdentity",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540327.0,
+            "EventSource": "sts.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:18:47Z\",\"eventSource\":\"sts.amazonaws.com\",\"eventName\":\"GetCallerIdentity\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"Boto3/1.28.11 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#adaptive Botocore/1.31.19\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"e4b1f605-6862-4a45-a086-7df9dd75d8ff\",\"eventID\":\"bf9981f8-0622-40e4-afc2-21aba3b4d70a\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"sts.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "430b0ff2-3566-4594-a479-8f54aedf53cd",
+            "EventName": "DescribeInstances",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540113.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:15:13Z\",\"eventSource\":\"ec2.amazonaws.com\",\"eventName\":\"DescribeInstances\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"aws-cli/1.29.19 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#legacy botocore/1.31.19\",\"errorCode\":\"Client.UnauthorizedOperation\",\"errorMessage\":\"You are not authorized to perform this operation.\",\"requestParameters\":{\"instancesSet\":{},\"filterSet\":{}},\"responseElements\":null,\"requestID\":\"a4f3ab96-9c97-4eb9-aa88-1f9d94942492\",\"eventID\":\"430b0ff2-3566-4594-a479-8f54aedf53cd\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"ec2.us-east-1.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "57977e73-0cc5-4354-898b-c2bea51cee4a",
+            "EventName": "GetCallerIdentity",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540064.0,
+            "EventSource": "sts.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:14:24Z\",\"eventSource\":\"sts.amazonaws.com\",\"eventName\":\"GetCallerIdentity\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"aws-cli/1.29.19 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#legacy botocore/1.31.19\",\"requestParameters\":null,\"responseElements\":null,\"requestID\":\"693a20e3-0098-4a43-9ed2-797c19ad8341\",\"eventID\":\"57977e73-0cc5-4354-898b-c2bea51cee4a\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"sts.amazonaws.com\"}}"
+        },
+        {
+            "EventId": "6ec1e3dc-a928-4d5c-9e97-acfd8c05de00",
+            "EventName": "ListBuckets",
+            "ReadOnly": "true",
+            "AccessKeyId": "AKIATCYXUWLDTF7IPQFR",
+            "EventTime": 1691540044.0,
+            "EventSource": "s3.amazonaws.com",
+            "Username": "theiamguy",
+            "Resources": [],
+            "CloudTrailEvent": "{\"eventVersion\":\"1.08\",\"userIdentity\":{\"type\":\"IAMUser\",\"principalId\":\"AIDATCYXUWLDX57AIOSBB\",\"arn\":\"arn:aws:iam::212113601223:user/theiamguy\",\"accountId\":\"212113601223\",\"accessKeyId\":\"AKIATCYXUWLDTF7IPQFR\",\"userName\":\"theiamguy\"},\"eventTime\":\"2023-08-09T00:14:04Z\",\"eventSource\":\"s3.amazonaws.com\",\"eventName\":\"ListBuckets\",\"awsRegion\":\"us-east-1\",\"sourceIPAddress\":\"24.120.55.69\",\"userAgent\":\"[aws-cli/1.29.19 md/Botocore#1.31.19 ua/2.0 os/macos#22.6.0 md/arch#arm64 lang/python#3.11.4 md/pyimpl#CPython cfg/retry-mode#legacy botocore/1.31.19]\",\"errorCode\":\"AccessDenied\",\"errorMessage\":\"Access Denied\",\"requestParameters\":{\"Host\":\"s3.amazonaws.com\"},\"responseElements\":null,\"additionalEventData\":{\"SignatureVersion\":\"SigV4\",\"CipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"bytesTransferredIn\":0,\"AuthenticationMethod\":\"AuthHeader\",\"x-amz-id-2\":\"4l5Cdd/hBmKTU1TNNPBfi1p2abyAO8dS8Cs8FrAFwSSRO9tHp0S5WvhOKQKaZFftJ4H/TQrTIWY=\",\"bytesTransferredOut\":243},\"requestID\":\"PWAPZ48P15ZH9KXY\",\"eventID\":\"6ec1e3dc-a928-4d5c-9e97-acfd8c05de00\",\"readOnly\":true,\"eventType\":\"AwsApiCall\",\"managementEvent\":true,\"recipientAccountId\":\"212113601223\",\"eventCategory\":\"Management\",\"tlsDetails\":{\"tlsVersion\":\"TLSv1.2\",\"cipherSuite\":\"ECDHE-RSA-AES128-GCM-SHA256\",\"clientProvidedHostHeader\":\"s3.amazonaws.com\"}}"
+        }
+    ]
+}
